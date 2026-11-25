@@ -1,0 +1,31 @@
+{
+  "name": "dsh-douyin-dsh-folder",
+  "version": "1.1.0",
+  "description": "DSH 抖音收藏夹只读学习插件：目标收藏夹可配置，学过的记入本地账本；归档只给人工步骤，带页面闸门、去重账本与回读校验。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/core.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "skill/SKILL.md",
+    "package.json"
+  ],
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "douyin", "favorite", "readonly"],
+  "engines": { "node": "^22.19.0 || >=24.0.0" },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": { "optional": true }
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}
