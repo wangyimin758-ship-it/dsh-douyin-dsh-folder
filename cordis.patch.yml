@@ -1,0 +1,12 @@
+# dsh-douyin-dsh-folder —— DSH bundle patch
+# config 只是基线；用户可用 douyin_config 在插件 home 的 config.json 里运行时覆盖，立即生效且不动 profile patch。
+# home 留空或占位符时，插件自动回退到当前用户 home 下的 ~/.dsh/douyin-dsh-folder-data。
+- insert:
+    - id: douyin-dsh-folder
+      name: 'dsh-douyin-dsh-folder'
+      config:
+        home: '[PLACEHOLDER_DOUYIN_HOME]'
+        cdp: 'http://127.0.0.1:9222'
+        learnable: 'dsh'
+        archived: 'dsh已学'
+        defaultLimit: 5
